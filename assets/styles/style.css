@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Rubrik','Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ nav a {
+   font-size: 18px;
+   font-weight: 400;align-items:;
+   text-decoration: none;
+   color: #2866c3;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+ h2 {
+    color: #0b2752;
+ }
+
+ h3 {
+    color: #3c629c;
+ }
+
+ h4 {
+   color: #222f42;
+   text-align: left;
+   margin-bottom: -1px;
+}
+
+ .profile header {
+   text-align: left;
+}
+
+.featured-image {
+   width: 100%;
+}
+
+.profile img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   border-style: solid;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   margin-bottom: 20px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 7px;
+   padding: 45px 20px;
+   margin-top: 8px;
+   text-align: justify;
+}
+
+.jumbotron {
+   font-size: 20px;
+   padding: 10px;
+   background-color: #2866c3;
+   text-align: center;
+   color: #16386b;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+nav {
+   background-color: #173666;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float: right;
+   width: 75%;
+}
+
+aside {
+   float: left;
+   width: 25%;
+   padding-right: 20px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+header {
+   display: inline;
+}
+
+ footer {
+   padding: 5px;
+   color: #2866c3;
+   background-color:  #16386b;
+   text-align: center;
+   font-weight: bold;
+ }
+ 
+ .flex-container-column {
+   display: flex;
+   /* properti pendukung */
+   flex-direction: column;
+   margin: 5px auto;
+   text-align: left;
+}
+ 
+.flex-container-row {
+   display: flex;
+}
+ 
+.box {
+   flex-basis: 20%;
+   /* properti pendukung */
+   font-size: 1em;
+   cursor: pointer;
+   text-align: center;
+   padding: 5px;
+}
+
+.double {
+   flex-basis: 50%;
+   text-align: left;
+   padding: 0px;
+}
+
+@media screen and (max-width: 200px) {
+   .box {
+       padding: 10px;
+   }
+}
+
+@media screen and (max-width: 150px) {
+   .double {
+       padding: 10px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
